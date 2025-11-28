@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdriHost - Hosting Profesional</title>
+
+    <!-- iOS Web App -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- App Icons -->
+    <link rel="icon" type="image/webp" href="./assets/icons/logowebweather.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/logowebweather.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/logowebweather.webp">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-new">
+
+    <div class="nav-left">
+        <div class="brand">AdriHost</div>
+    </div>
+
+    <div class="hamburger-new" id="hamburger-new">☰</div>
+
+    <div class="nav-center">
+
+        <a class="nav-item" href="#planes">Planes</a>
+
+        <!-- HOSTING -->
+        <div class="nav-item dropdown" data-menu="hosting">
+            <span class="dropdown-title">
+                Hosting
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5l5-5z"/>
+                </svg>
+            </span>
+
+            <div class="mega-menu" id="menu-hosting">
+                <div class="column">
+                    <h4>Hosting Web</h4>
+                    <a href="#">Hosting Web</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">WooCommerce</a>
+                </div>
+                <div class="column">
+                    <h4>Dominios</h4>
+                    <a href="#">Comprar dominio</a>
+                    <a href="#">Transferir dominio</a>
+                </div>
+                <div class="column">
+                    <h4>Email</h4>
+                    <a href="#">Email profesional</a>
+                    <a href="#">Workspace</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOPORTE -->
+        <div class="nav-item dropdown" data-menu="soporte">
+            <span class="dropdown-title">
+                Soporte
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5l5-5z"/>
+                </svg>
+            </span>
+
+            <div class="mega-menu" id="menu-soporte">
+                <div class="column">
+                    <h4>Guías</h4>
+                    <a href="#">Banco de conocimiento</a>
+                    <a href="#">Tutoriales</a>
+                </div>
+                <div class="column">
+                    <h4>Ayuda</h4>
+                    <a href="#">Centro de soporte</a>
+                    <a href="#">Contactar soporte</a>
+                </div>
+                <div class="column">
+                    <h4>Comunidad</h4>
+                    <a href="#">Foros</a>
+                    <a href="#">Guías de expertos</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="nav-item" href="#beneficios">Beneficios</a>
+    </div>
+
+    <div class="nav-right">
+        <button class="account-btn mobile">Mi cuenta</button>
+    </div>
+    <div class="nav-right">
+    <button class="account-btn">Mi cuenta</button>
+</div>
+
+
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="#planes">Planes</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#comparativa">Comparativa</a>
+    <a href="#contacto">Contacto</a>
+    <button class="account-btn mobile">Mi cuenta</button>
+</div>
+
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="hero-content" style="z-index:10;">
+        <h1>Hosting Rápido, Seguro<br><span>y Diseñado para Crecer</span></h1>
+        <p>Servidores optimizados, protección avanzada y velocidad ultrarrápida.</p>
+        <a href="#planes" class="btn scroll-btn">Ver Planes</a>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+
+
+<!-- BENEFICIOS -->
+<section id="beneficios" class="why-section">
+    <h2>¿Por qué elegirnos?</h2>
+
+    <div class="why-grid">
+        <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Velocidad Máxima</h3>
+            <p>Infraestructura optimizada para un rendimiento constante.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🔒</div>
+            <h3>Seguridad Total</h3>
+            <p>Firewall avanzado, protección DDoS y cifrado 24/7.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">👨‍💻</div>
+            <h3>Soporte 24/7</h3>
+            <p>Equipo técnico disponible todos los días del año.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ESTADÍSTICAS -->
+<section class="stats">
+    <div class="stat">
+        <h3>+12.000</h3>
+        <p>Webs Alojadas</p>
+    </div>
+    <div class="stat">
+        <h3>99.99%</h3>
+        <p>Uptime Garantizado</p>
+    </div>
+    <div class="stat">
+        <h3>+1M</h3>
+        <p>Clientes Protegidos</p>
+    </div>
+</section>
+
+
+<!-- PLANES / CARRUSEL 3D -->
+<section id="planes" class="planes-section">
+    <h2>Planes de Hosting</h2>
+
+    <div class="price-carousel">
+
+        <div class="card prev">
+            <h3>Starter</h3>
+            <p>Ideal para comenzar tu presencia online</p>
+            <ul>
+                <li>1 sitio web</li>
+                <li>10 GB SSD</li>
+                <li>SSL incluido</li>
+                <li>Protección básica</li>
+            </ul>
+            <span class="price">2.99€/mes</span>
+        </div>
+
+        <div class="card active popular">
+            <h3>Pro</h3>
+            <p>El plan perfecto para crecer sin límites</p>
+            <ul>
+                <li>Sitios ilimitados</li>
+                <li>50 GB SSD</li>
+                <li>SSL ilimitado</li>
+                <li>Backups diarios</li>
+                <li>Anti-DDoS avanzado</li>
+                <li>Soporte 24/7</li>
+            </ul>
+            <span class="price">6.99€/mes</span>
+        </div>
+
+        <div class="card next">
+            <h3>Ultra</h3>
+            <p>Máximo rendimiento. Hosting profesional.</p>
+            <ul>
+                <li>Hosting ilimitado</li>
+                <li>200 GB NVMe</li>
+                <li>Seguridad premium</li>
+                <li>Firewall inteligente</li>
+                <li>CDN global</li>
+                <li>Soporte prioritario</li>
+            </ul>
+            <span class="price">12.99€/mes</span>
+        </div>
+
+    </div>
+
+    <div class="carousel-controls">
+        <span class="arrow left">❮</span>
+        <span class="arrow right">❯</span>
+    </div>
+</section>
+
+
+<!-- COMPARATIVA -->
+<section class="comparativa" id="comparativa">
+    <h2>Compara nuestros planes</h2>
+    <p class="sub">Descubre qué incluye cada nivel y cuál se adapta mejor a tus necesidades.</p>
+
+    <!-- tarjetas arriba -->
+    <div class="price-cards">
+        <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price">2.99€/mes</p>
+            <button class="btn-plan">Elegir Starter</button>
+        </div>
+
+        <div class="price-card popular">
+            <span class="tag-popular">POPULAR</span>
+            <h3>Pro</h3>
+            <p class="price">6.99€/mes</p>
+            <button class="btn-plan">Elegir Pro</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Ultra</h3>
+            <p class="price">12.99€/mes</p>
+            <button class="btn-plan">Elegir Ultra</button>
+        </div>
+    </div>
+
+    <!-- tabla -->
+    <div class="table-header">
+        <div class="plan-col">Starter</div>
+        <div class="plan-col">Pro</div>
+        <div class="plan-col">Ultra</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">1 sitio web</div>
+        <div class="check">✔</div>
+        <div class="check">✔</div>
+        <div class="check">✔</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">Almacenamiento SSD</div>
+        <div class="check">10 GB</div>
+        <div class="check">50 GB</div>
+        <div class="check">200 GB NVMe</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">Certificado SSL</div>
+        <div class="check">✔</div>
+        <div class="check">✔</div>
+        <div class="check">✔ Ilimitado</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">Backups Automáticos</div>
+        <div class="check">Diarios</div>
+        <div class="check">Diarios</div>
+        <div class="check">Cada 12h</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">Protección Anti-DDoS</div>
+        <div class="check">Básica</div>
+        <div class="check">Avanzada</div>
+        <div class="check">Máxima</div>
+    </div>
+
+    <div class="table-row">
+        <div class="feature">Soporte 24/7</div>
+        <div class="check">✔</div>
+        <div class="check">✔ Prioritario</div>
+        <div class="check">✔ VIP</div>
+    </div>
+
+</section>
+
+
+<!-- INCLUIDO -->
+<section class="incluido">
+
+    <h2>Incluido con cada plan</h2>
+
+    <div class="incluido-grid">
+
+        <div class="incluido-item">
+            <div class="icon">💬</div>
+            <h3>Creador de sitios web</h3>
+            <p>Crea tu web en minutos usando herramientas intuitivas y rápidas.</p>
+        </div>
+
+        <div class="incluido-item">
+            <div class="icon">🛡️</div>
+            <h3>Seguridad absoluta</h3>
+            <p>Protección avanzada para mantener tu sitio siempre seguro.</p>
+        </div>
+
+        <div class="incluido-item">
+            <div class="icon">⚡</div>
+            <h3>99,9% de uptime garantizado</h3>
+            <p>Tu proyecto estará siempre disponible sin interrupciones.</p>
+        </div>
+
+        <div class="incluido-item">
+            <div class="icon">📊</div>
+            <h3>Panel de control sencillo</h3>
+            <p>Gestiona tu sitio de forma simple, profesional y rápida.</p>
+        </div>
+
+        <div class="incluido-item">
+            <div class="icon">💬</div>
+            <h3>Soporte 24/7</h3>
+            <p>Estamos disponibles siempre que lo necesites, sin esperas.</p>
+        </div>
+
+        <div class="incluido-item">
+            <div class="icon">🌍</div>
+            <h3>CDN Global</h3>
+            <p>Tu sitio cargará más rápido en cualquier país gracias a nuestra red CDN.</p>
+        </div>
+
+    </div>
+
+    <button class="incluido-btn">Empezar ya</button>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-col">
+            <h4>Hosting</h4>
+            <a href="#">Hosting Web</a>
+            <a href="#">Hosting WordPress</a>
+            <a href="#">Hosting VPS</a>
+            <a href="#">Cloud Hosting</a>
+            <a href="#">Hosting WooCommerce</a>
+            <a href="#">Correo Profesional</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Dominio</h4>
+            <a href="#">Buscar dominio</a>
+            <a href="#">Dominios económicos</a>
+            <a href="#">Dominio gratis</a>
+            <a href="#">Transferir dominio</a>
+            <a href="#">Certificado SSL</a>
+            <a href="#">WHOIS</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Herramientas</h4>
+            <a href="#">Creador de sitios web</a>
+            <a href="#">Creador tiendas online</a>
+            <a href="#">Generador de logos</a>
+            <a href="#">Enlace en la bio</a>
+            <a href="#">Migrar a AdriHost</a>
+            <a href="#">API de AdriHost</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Información</h4>
+            <a href="#">Precios</a>
+            <a href="#">Opiniones</a>
+            <a href="#">Programa de afiliados</a>
+            <a href="#">Estado del sistema</a>
+            <a href="#">Mapa del sitio</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-brand">
+            <h2>AdriHost</h2>
+        </div>
+
+        <div class="footer-payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/HD_Visa.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/HD_Mastercard.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/HD_Amex.svg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/HD_Discover.svg" alt="">
+        </div>
+
+        <div class="footer-legal">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos del servicio</a>
+            <a href="#">Política de reembolso</a>
+        </div>
+
+        <p class="footer-copy">© 2025 AdriHost. Todos los derechos reservados.</p>
+
+    </div>
+
+</footer>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("PWA lista 🚀"))
+        .catch(err => console.log("Error SW:", err));
+        }
+    </script>
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
